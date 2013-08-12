@@ -1,0 +1,30 @@
+<% extend 'layout.html' %>
+
+<div id="templatemo_main" class="wrapper">
+    <div id="content" class="left">
+        <% for post in @posts : %>
+        <div class="post">
+            <h2><%- post.title %></h2>
+            <div class="post_meta">
+                <span><%- post.date %></span><span>
+                <a href="#"><%- post.author %></a></span><span>
+                <a href="#"><%- post.coments_count %> Comments</a></span>
+                <span>
+                    <% for tag, inx in post.tags : %>
+                        <a href="#"><%- tag %></a><% if inx != post.tags.length-1: %> ,<% end%>
+                    <% end %>
+                </span>
+                <div class="clear"></div></div>
+            <div class="img_frame img_frame_23 img_nom">
+                <span></span><img src="<%- post.img %>" alt="" />
+            </div>
+            <p><%- post.text %></p>
+            <a href="/blog/<%- post._id %>" class="more">More</a>
+        </div>
+        <% end %>
+
+        <% include 'blocks/pager.html', { back_to_top : true } %>
+    </div> 
+    
+    <% include 'blocks/posts_sidebar.html' %>
+</div>

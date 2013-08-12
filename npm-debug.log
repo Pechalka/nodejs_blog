@@ -1,0 +1,36 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'c:\\Program Files (x86)\\nodejs\\node.exe',
+1 verbose cli   'c:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'start' ]
+2 info using npm@1.1.33
+3 info using node@v0.8.1
+4 verbose config file C:\Users\Andrew\.npmrc
+5 verbose config file c:\Program Files (x86)\nodejs\etc\npmrc
+6 verbose config file c:\Program Files (x86)\nodejs\node_modules\npm\npmrc
+7 verbose read json C:\Work\html\7\templatemo_365_orando\package.json
+8 verbose run-script [ 'prestart', 'start', 'poststart' ]
+9 info prestart test@0.0.1
+10 info start test@0.0.1
+11 verbose unsafe-perm in lifecycle true
+12 silly exec cmd "/c" "node app.js"
+13 silly cmd,/c,node app.js,C:\Work\html\7\templatemo_365_orando spawning
+14 info test@0.0.1 Failed to exec start script
+15 error test@0.0.1 start: `node app.js`
+15 error `cmd "/c" "node app.js"` failed with 1
+16 error Failed at the test@0.0.1 start script.
+16 error This is most likely a problem with the test package,
+16 error not with npm itself.
+16 error Tell the author that this fails on your system:
+16 error     node app.js
+16 error You can get their info via:
+16 error     npm owner ls test
+16 error There is likely additional logging output above.
+17 error System Windows_NT 6.1.7601
+18 error command "c:\\Program Files (x86)\\nodejs\\node.exe" "c:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "start"
+19 error cwd C:\Work\html\7\templatemo_365_orando
+20 error node -v v0.8.1
+21 error npm -v 1.1.33
+22 error code ELIFECYCLE
+23 error message test@0.0.1 start: `node app.js`
+23 error message `cmd "/c" "node app.js"` failed with 1
+24 verbose exit [ 1, true ]

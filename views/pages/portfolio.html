@@ -1,0 +1,24 @@
+<% extend 'layout.html' %>
+
+<div id="templatemo_main" class="wrapper">
+	<h1>Portfolio</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Validate <a href="http://validator.w3.org/check?uri=referer" rel="nofollow">XHTML</a> &amp; <a href="http://jigsaw.w3.org/css-validator/check/referer" rel="nofollow">CSS</a>.  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pharetra varius libero sit amet ultrices. Suspendisse ac sapien turpis. Donec congue dolor eu purus adipiscing fringilla.</p>
+  <div class="clear h40"></div>
+	<div id="gallery">
+        <% for item, index in @items : %>
+          <div class="gallery_box">
+             <div class="img_frame img_frame_12 <% if !(index % 2) : %>left<% else : %>right<% end %>"><span></span><img src="<%- item.img %>" alt="" /></div>
+             <div class="half <% if !!(index % 2) : %>left<% else : %>right<% end %>">
+                  <h2><%- item.title %></h2>
+                  <p> <%- item.text %></p>
+                  <a href="#" class="more">DETAIL</a>
+              </div>
+              <div class="clear"></div>
+          </div>        
+        <% end %>
+	</div>
+    
+    <% include 'blocks/pager.html', { back_to_top : true } %>
+</div>
+
+

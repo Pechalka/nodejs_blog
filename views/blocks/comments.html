@@ -1,0 +1,91 @@
+<ol class="comment_list">
+            <li>
+                <div class="comment_box">
+                    <img src="/images/avator.jpg" alt="" class="img_fl img_border" />
+                    <div class="comment_content">
+                        <div class="comment_meta"><strong><a href="#"> Summy</a></strong> April 30, 2072 | 9:45 am</div>
+                        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pharetra varius libero sit amet ultrices.</p>
+                        <a href="#" class="more">Reply</a>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </li>
+            
+            <li>
+                <ul>
+                    <li class="depth_2">
+                        <div class="comment_box">
+                            <img src="/images/avator.jpg" alt="1" class="img_fl img_border" />
+                            <div class="comment_content">
+                            <div class="comment_meta"><strong><a href="#">Joker</a></strong> May 3, 2072 | 11:00 pm</div>
+                            <p>Phasellus sed massa sit amet enim pulvinar molestie. Duis at eros mauris tortor, non fringilla augue leo vel justo.</p>
+                            <a href="#" class="more">Reply</a>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </li>
+                    <ul>
+                        <li class="depth_3">
+                            <div class="comment_box">
+                                <img src="/images/avator.jpg" alt="2" class="img_fl img_border" />
+                                <div class="comment_content">
+                                <div class="comment_meta"><strong><a href="#">Adamo</a></strong> May 6, 2072 | 12:50 pm</div>
+                                <p>In hac habitasse platea dictumst. Vestibulum enim turpis, faucibus sed varius nec, tincidunt a leo. </p>
+                                <a href="#" class="more">Reply</a>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </ul>
+            </li>
+            <li>
+                <div class="comment_box">
+                    <img src="/images/avator.jpg" alt="3" class="img_fl img_border" />
+                    <div class="comment_content">
+                        <div class="comment_meta"><strong><a href="#">George</a></strong> April 10, 2072 | 10:43 am</div>
+                        <p>Etiam faucibus aliquet turpis sit amet congue. Praesent at nulla id lectus mattis consequat. Ut rutrum blandit dui quis condimentum. In hac habitasse platea dictumst.</p>
+                        <a href="#" class="more">Reply</a>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </li>
+            <li>
+                <div class="comment_box">
+                    <img src="/images/avator.jpg" alt="4" class="img_fl img_border" />
+                    <div class="comment_content">
+                        <div class="comment_meta"><strong><a href="#">Rose</a></strong> April 12, 2072 | 12:38 am</div>
+                        <p>Fusce posuere gravida tincidunt. Fusce eleifend, dui in dapibus porttitor, lacus risus accumsan elit, id tempor est risus quis eros. Sed ullamcorper iaculis tristique. Aliquam id eros ante.</p>
+                        <a href="#" class="more">Reply</a>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </li>
+        </ol>
+        
+        <div class="clear"></div>
+         
+         <% include 'blocks/pager.html', { back_to_top : true } %>
+
+        <div id="comment_form">
+            <h3>Leave your comment</h3>
+            
+            <form action="#" method="post">
+                <div class="form_row">
+                    <label>Name (* required )</label>
+                    <br />
+                    <input type="text" name="name" />
+                </div>
+                <div class="form_row">
+                    <label>Email  (* required but it will not be published )</label>
+                    <br />
+                    <input type="text" name="name" />
+                </div>
+                <div class="form_row">
+                    <label>Your comment</label><br />
+                    <textarea  name="comment" rows="" cols=""></textarea>
+                </div>
+
+                <input type="submit" name="Submit" value="Submit" class="submit_btn" />
+            </form>        
+        </div>
